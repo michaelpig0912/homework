@@ -1,8 +1,15 @@
+#ref:http://imsardine.simplbug.com/note/random/python.html
 import random
-import statistics
-a=6
-a == input("input:")
-range(0, a)
-b = [random.uniform(-1, 1)] 
-for i in range(a):
-	print (b[i])
+import numpy as np
+
+a = input("input:")
+try:
+	b = int(a)
+except:
+	Pass()
+c = [random.uniform(-1, 1) for i in range(b) ] 
+print (c)
+d = np.mean(c)
+print (d)
+e = np.std(c)
+print (e)
